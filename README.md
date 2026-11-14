@@ -17,16 +17,21 @@ SentinelAI is designed to monitor production systems, detect unusual activities,
 
 ## 🏗️ System Architecture
 
+## 🏗️ System Architecture
+
 ```mermaid
 flowchart TD
     A[Production Agent] --> D[FastAPI Backend]
     B[Remote Agent] --> D
     C[Development & Security Monitors] --> D
     E[Website Monitor] --> D
+
     D --> F[Incident Detection]
     F --> G[AI Investigation]
+
     G --> H[OpenRouter AI]
-    H --> I[Gemini Fallback]
+    G -. Fallback .-> I[Google Gemini]
+
     D --> J[(SQLite Database)]
     D --> K[Email Notifications]
     D --> L[React Dashboard]
