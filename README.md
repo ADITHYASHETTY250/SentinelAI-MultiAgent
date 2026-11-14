@@ -15,7 +15,6 @@ SentinelAI is designed to monitor production systems, detect unusual activities,
 - **Email Notifications:** Sends alerts for critical incidents and security events.
 - **Centralized Dashboard:** Displays system metrics, incidents, AI investigations, security alerts, and website monitoring history.
 
-## 🏗️ System Architecture
 
 ## 🏗️ System Architecture
 
